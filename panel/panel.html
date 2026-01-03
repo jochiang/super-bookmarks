@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Bookmarks</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Header with navigation -->
+    <header class="panel-header">
+      <nav class="nav-tabs">
+        <button class="nav-tab active" data-view="ingest">
+          <span>Add/Edit</span>
+        </button>
+        <button class="nav-tab" data-view="search">
+          <span>Search</span>
+        </button>
+        <button class="nav-tab" data-view="browse">
+          <span>Browse</span>
+        </button>
+        <button class="nav-tab" data-view="export">
+          <span>Export</span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main id="view-container">
+      <!-- Views will be injected here dynamically -->
+    </main>
+
+    <!-- Selection bar (for multi-select) -->
+    <div id="selection-bar" class="selection-bar">
+      <span class="selection-count">
+        <strong id="selection-count-num">0</strong> items selected
+      </span>
+      <div class="selection-actions">
+        <button class="btn btn-ghost btn-sm" id="selection-clear">Clear</button>
+        <button class="btn btn-secondary btn-sm" id="selection-export">Export Selected</button>
+      </div>
+    </div>
+
+    <!-- Loading overlay for model initialization -->
+    <div id="loading-overlay" class="hidden">
+      <div class="loading-indicator">
+        <div class="spinner"></div>
+        <p class="loading-text" id="loading-text">Initializing AI model...</p>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notification container -->
+    <div id="notification-container"></div>
+
+    <!-- Modal container -->
+    <div id="modal-backdrop" class="modal-backdrop">
+      <div class="modal" id="modal">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modal-title"></h3>
+          <button class="modal-close" id="modal-close">&times;</button>
+        </div>
+        <div class="modal-body" id="modal-body"></div>
+        <div class="modal-footer" id="modal-footer"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="panel.js"></script>
+</body>
+</html>
