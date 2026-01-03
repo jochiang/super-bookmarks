@@ -223,7 +223,7 @@ export class SearchView {
     } else if (isLoaded) {
       element.innerHTML = `
         <span style="color: var(--color-success);">●</span>
-        AI-powered semantic search ready
+        Semantic search ready
       `;
     } else {
       element.innerHTML = `
