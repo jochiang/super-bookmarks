@@ -1,6 +1,6 @@
 # Super Bookmarks
 
-A Chrome extension for capturing notes, links, and content with semantic search. Highlight text on any webpage, right-click to save, and find it later using natural language queries.
+A Chrome extension for capturing notes, links, and content with semantic search. Highlight text on any webpage, right-click to save, and find it later using natural language queries. I've always done most of my research from within a browser, so it made sense to try and just integrate my notes with my research process instead of alt-tabbing back and forth between the browser and a notes app. Added on a basic semantic search to make management a little easier. It's all local.
 
 ## Features
 
