@@ -1,36 +1,36 @@
 /**
  * Super Bookmarks - Main Styles
- * Dark mode theme
+ * Ink + Gold theme
  */
 
 /* ==================== CSS Variables ==================== */
 :root {
-  /* Dark mode palette */
-  --bg-primary: #1a1a2e;
-  --bg-secondary: #16213e;
-  --bg-tertiary: #0f3460;
-  --bg-hover: #1f4068;
-  --bg-input: #0d1b2a;
+  /* Ink + Gold palette */
+  --bg-primary: #0c0c0c;
+  --bg-secondary: #141414;
+  --bg-tertiary: #1f1f1f;
+  --bg-hover: #2a2a2a;
+  --bg-input: #0a0a0a;
 
   /* Text colors */
-  --text-primary: #e8e8e8;
-  --text-secondary: #a0a0a0;
-  --text-muted: #6b7280;
-  --text-inverse: #1a1a2e;
+  --text-primary: #fafafa;
+  --text-secondary: #a1a1a1;
+  --text-muted: #5a5a5a;
+  --text-inverse: #0c0c0c;
 
   /* Accent colors */
-  --accent-primary: #00d4ff;
-  --accent-secondary: #7b2cbf;
-  --accent-hover: #00b8e6;
+  --accent-primary: #eab308;
+  --accent-secondary: #a16207;
+  --accent-hover: #ca8a04;
 
   /* Status colors */
-  --color-success: #4ecdc4;
-  --color-error: #ff6b6b;
-  --color-warning: #ffd93d;
-  --color-info: #6bcaff;
+  --color-success: #22c55e;
+  --color-error: #ef4444;
+  --color-warning: #eab308;
+  --color-info: #a1a1a1;
 
   /* Borders */
-  --border-color: #2a2a4a;
+  --border-color: #262626;
   --border-radius-sm: 4px;
   --border-radius: 8px;
   --border-radius-lg: 12px;
@@ -209,7 +209,7 @@ a:hover {
 .form-textarea:focus {
   outline: none;
   border-color: var(--accent-primary);
-  box-shadow: 0 0 0 2px rgba(0, 212, 255, 0.2);
+  box-shadow: 0 0 0 2px rgba(234, 179, 8, 0.25);
 }
 
 .form-input::placeholder,
@@ -266,7 +266,7 @@ a:hover {
 }
 
 .btn-danger:hover:not(:disabled) {
-  background: #ff5252;
+  background: #dc2626;
 }
 
 .btn-ghost {
