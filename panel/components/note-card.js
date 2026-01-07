@@ -206,7 +206,12 @@ export class NoteCard {
     if (!parent) return; // Guard against element not in DOM
 
     const newElement = this.render();
-    parent.replaceChild(newElement, oldElement);
+
+    try {
+      parent.replaceChild(newElement, oldElement);
+    } catch (e) {
+      // DOM may have changed (e.g., list re-rendered during click), ignore
+    }
 
     this.onExpand(this.note.id, this.isExpanded);
   }
@@ -237,7 +242,12 @@ export class NoteCard {
     if (!parent) return; // Guard against element not in DOM
 
     const newElement = this.render();
-    parent.replaceChild(newElement, oldElement);
+
+    try {
+      parent.replaceChild(newElement, oldElement);
+    } catch (e) {
+      // DOM may have changed (e.g., list re-rendered), ignore
+    }
   }
 }
 
